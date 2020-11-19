@@ -12,8 +12,18 @@ as a memory aid.
 
 - [heil.awk](awk/heil.awk) - print he(ad and ta)il of stream
 
+## Scripting
+
+Refrain from using non-POSIX features. For shell scripting this
+means that the shell is *not* bash and that not all tools have
+all options. Consult the [POSIX standard][posix], available in
+HTML form from [The Open Group][opengroup]. More info on POSIX
+and the scripts can be found in [separate notes](doc/NOTES.md).
+
 ## License
 
 ![License Badge](https://img.shields.io/github/license/ujr/scripts)
 These scripts are available under the [MIT License](LICENSE).
 
+[posix]: https://pubs.opengroup.org/onlinepubs/9699919799/
+[opengroup]: https://www.opengroup.org/
