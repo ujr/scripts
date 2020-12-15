@@ -11,6 +11,7 @@ as a memory aid.
 ## Index
 
 - [heil.awk](awk/heil.awk) - print he(ad and ta)il of stream
+- [timeout.sh](shell/timeout.sh) - run command with a time limit
 
 ## Scripting
 

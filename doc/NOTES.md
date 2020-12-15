@@ -10,6 +10,12 @@ is fully POSIX-compliant. While there is nothing wrong with
 using the bash, scripts should target the dash, or, more
 generally, attempt POSIX compliance.
 
+## Shell Invocation
+
+- TODO Login shell, interactive shell, batch shell
+- TODO /etc/profile, ~/.profile, ~/.bashrc, etc.
+- TODO the ENV and BASH_ENV variables
+
 ## About POSIX
 
 POSIX is the “Portable Operating System Interface”, a standard
