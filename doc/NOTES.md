@@ -16,6 +16,32 @@ generally, attempt POSIX compliance.
 - TODO /etc/profile, ~/.profile, ~/.bashrc, etc.
 - TODO the ENV and BASH_ENV variables
 
+## Expansion: `$*` vs `$@`
+
+Both stand for all arguments, but expand differently.
+Probably best understood by example:
+
+```sh
+show() { echo "got $# args"; }
+tryit() { show $*; show $@; show "$*"; show "$@"; }
+tryit a "b c" d
+```
+
+produces as output:
+
+```text
+got 4 args
+got 4 args
+got 1 args
+got 3 args
+```
+
+Note that only `"$@"` preserves the original number
+of arguments. Also note, though not evident from the
+example above, that `"$*"` separates arguments with
+the current value of `IFS` (internal field separator),
+not space.
+
 ## About POSIX
 
 POSIX is the “Portable Operating System Interface”, a standard
